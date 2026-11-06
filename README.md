@@ -6,5 +6,6 @@ models link : https://drive.google.com/file/d/1kHiJpLOAQwRtRfdVtcFi2wq4SA8vcOam/
 1. Download and unpack the rar file
 2. Create a conda python virtual environment
 3. install all the dependencies in the req.txt
-4. run "python driving_assistant.py --live" in the terminal while the gta 3 with the given save file is running in the background
+4. install pytorch based on your system req , install pytorch CUDA version if you have GPU with CUDA support
+5. run "python driving_assistant.py --live" in the terminal while the gta 3 with the given save file is running in the background
 

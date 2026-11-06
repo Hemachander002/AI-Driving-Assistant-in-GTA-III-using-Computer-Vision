@@ -10,20 +10,17 @@ import segmentation_models_pytorch as smp
 from torchvision.transforms import functional as TF
 from ultralytics import YOLO
 
-# MP3 playback via pygame (cross-platform).
 try:
     import pygame
 except ImportError:
     pygame = None
 
-
-# -------------------- CONFIG --------------------
 YOLO_PATH = r"gta3_yolov8m-3\weights\best.pt"
 DEEPLAB_PATH = r"deeplabv3plus_resnet50_best.pth"
 
 YOLO_IMGSZ = 1088
-YOLO_CONF = 0.50       # YOLO confidence (separate from lane confidence)
-LANE_CONFIDENCE = 0.86  # DeepLab road-class probability threshold
+YOLO_CONF = 0.50       
+LANE_CONFIDENCE = 0.86 
 # Image-space vector distance thresholds (pixels).
 # Euclidean distance between player bbox center and object bbox center.
 # These are image-space pixels, NOT world-space meters.
@@ -51,7 +48,6 @@ STD = (0.229, 0.224, 0.225)
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
-# -------------------- MODELS --------------------
 def load_models():
     yolo = YOLO(YOLO_PATH)
 
@@ -130,7 +126,6 @@ def detect_objects(frame, model):
     return detections
 
 
-# -------------------- LANE / ALERT LOGIC --------------------
 def road_interval_at_row(mask, y, x_hint=None):
     """Return the contiguous road interval at y nearest x_hint, if any."""
     h, w = mask.shape

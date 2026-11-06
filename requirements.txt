@@ -1,0 +1,6 @@
+ultralytics
+segmentation-models-pytorch
+opencv-python
+numpy
+mss
+pygame

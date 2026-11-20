@@ -2,6 +2,7 @@
 The idea is to mimic how real-life Driving Assistance Systems (ADAS) work, using a simulated driving environment to explore how AI can perceive road conditions, detect surrounding objects, and warn drivers about potential hazards.
 
 models link : https://drive.google.com/file/d/1kHiJpLOAQwRtRfdVtcFi2wq4SA8vcOam/view?usp=sharing
+learn more : https://lnkd.in/p/g7urbx7J
 
 1. Download and unpack the rar file
 2. Create a conda python virtual environment

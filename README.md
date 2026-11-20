@@ -2,7 +2,6 @@
 The idea is to mimic how real-life Driving Assistance Systems (ADAS) work, using a simulated driving environment to explore how AI can perceive road conditions, detect surrounding objects, and warn drivers about potential hazards.
 
 models link : https://drive.google.com/file/d/1kHiJpLOAQwRtRfdVtcFi2wq4SA8vcOam/view?usp=sharing
-learn more : https://lnkd.in/p/g7urbx7J
 
 1. Download and unpack the rar file
 2. Create a conda python virtual environment
@@ -12,4 +11,6 @@ learn more : https://lnkd.in/p/g7urbx7J
 6. load the save game instead of starting a new game
 7. use the "maroon cheetah" car in the garage 
 8. run "python driving_assistant.py --live" in the terminal while the gta 3 is running in the background
+
+Explanation : https://lnkd.in/p/g7urbx7J
 

@@ -7,5 +7,8 @@ models link : https://drive.google.com/file/d/1kHiJpLOAQwRtRfdVtcFi2wq4SA8vcOam/
 2. Create a conda python virtual environment
 3. install all the dependencies in the req.txt
 4. install pytorch based on your system req , install pytorch CUDA version if you have GPU with CUDA support
-5. run "python driving_assistant.py --live" in the terminal while the gta 3 with the given save file is running in the background
+5. copy and paste the GTA3 User Files folder in the Documents folder
+6. load the save game instead of starting a new game
+7. use the "maroon cheetah" car in the garage 
+8. run "python driving_assistant.py --live" in the terminal while the gta 3 is running in the background
 
